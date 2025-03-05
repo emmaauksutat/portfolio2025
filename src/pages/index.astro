@@ -3,6 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import Logo from '../components/Logo.astro';
 import Navigation from '../components/Navigation.astro';
 import Projekt from '../components/Projekt.astro';
+import Projekt2 from '../components/Projekt2.astro';
+import Header from '../components/Header.astro';
 
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -10,9 +12,19 @@ import Projekt from '../components/Projekt.astro';
 ---
 
 <Layout>
-	<Logo></Logo>
-	<Navigation> </Navigation>
-	<Projekt img="https://placecats.com/neo_banana/300/200" tekst="kattekattesen"> </Projekt>
-	<Projekt img="https://placecats.com/millie_neo/300/200" tekst="kattikattikat"></Projekt>
-	<Projekt img="https://placecats.com/bella/300/200" tekst="kutkatkut"></Projekt>
+
+	<Header></Header>
+	<Intruduction></Intruduction>
+	<Projekt2 title="Very nice CAT title" src="https://placecats.com/louie/300/200"> </Projekt2>
+
+	<Projekt2 title="Very nicer KITTYCAT title" src="https://placecats.com/poppy/300/200"> </Projekt2>
+
+	<Projekt img="https://placecats.com/neo_banana/300/200" 
+	tekst="kattekattesen"buttonColor="bg-yellow-300"> </Projekt>
+
+	<Projekt img="https://placecats.com/millie_neo/300/200" 
+	tekst="kattikattikat" buttonColor="bg-yellow-300"></Projekt>
+
+	<Projekt img="https://placecats.com/bella/300/200" 
+	tekst="kutkatkut" buttonColor="bg-yellow-300"></Projekt>
 </Layout>
