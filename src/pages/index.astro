@@ -5,16 +5,18 @@ import Navigation from '../components/Navigation.astro';
 import Projekt from '../components/Projekt.astro';
 import Projekt2 from '../components/Projekt2.astro';
 import Header from '../components/Header.astro';
-
+import Introduction from '../components/Introduction.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
+	
+	<img src="/Pattismith.jpeg" alt="">
 
 	<Header></Header>
-	<Intruduction></Intruduction>
+	<Introduction></Introduction>
 	<Projekt2 title="Very nice CAT title" src="https://placecats.com/louie/300/200"> </Projekt2>
 
 	<Projekt2 title="Very nicer KITTYCAT title" src="https://placecats.com/poppy/300/200"> </Projekt2>
@@ -27,4 +29,7 @@ import Header from '../components/Header.astro';
 
 	<Projekt img="https://placecats.com/bella/300/200" 
 	tekst="kutkatkut" buttonColor="bg-yellow-300"></Projekt>
+
+	<div class="w-24 h-24 bg-red-400"></div>
+
 </Layout>
