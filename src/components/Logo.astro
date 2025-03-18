@@ -1,5 +1,16 @@
 ---
+const { title, description } = Astro.props;
 ---
-<h1 class="bg-green-400">
-    Emmas portfolio
-</h1>
+
+<header class="relative text-center">
+  <!-- Titel med rød streg gennem "R" -->
+  <h1 class="pt-6 text-3xl uppercase tracking-wide text center">
+    EMMAAUKSUTA<span class="line-through text-red-600">R</span>T
+  </h1>
+  <div class=" mt-0.5 px-4 bg-red-500 inline-block">
+  <h1 class="text-3xl">EMMAAUKSUTAT</h1>
+  </div>
+
+  <!-- Beskrivelse -->
+  <h2 class="text-2xl p-5.5">{description}</h2>
+</header>

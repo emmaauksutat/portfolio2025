@@ -1,35 +1,29 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Logo from '../components/Logo.astro';
 import Navigation from '../components/Navigation.astro';
-import Projekt from '../components/Projekt.astro';
-import Projekt2 from '../components/Projekt2.astro';
 import Header from '../components/Header.astro';
-import Introduction from '../components/Introduction.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Logo from '../components/Logo.astro';
 ---
 
 <Layout>
-	
-	<img src="/Pattismith.jpeg" alt="">
+  <!-- Header med professionel og voksen stil -->
 
-	<Header></Header>
-	<Introduction></Introduction>
-	<Projekt2 title="Very nice CAT title" src="https://placecats.com/louie/300/200"> </Projekt2>
 
-	<Projekt2 title="Very nicer KITTYCAT title" src="https://placecats.com/poppy/300/200"> </Projekt2>
+  <Logo description="Portfolio"> </Logo>
 
-	<Projekt img="https://placecats.com/neo_banana/300/200" 
-	tekst="kattekattesen"buttonColor="bg-yellow-300"> </Projekt>
+  <!-- Navigation med centreret layout -->
 
-	<Projekt img="https://placecats.com/millie_neo/300/200" 
-	tekst="kattikattikat" buttonColor="bg-yellow-300"></Projekt>
 
-	<Projekt img="https://placecats.com/bella/300/200" 
-	tekst="kutkatkut" buttonColor="bg-yellow-300"></Projekt>
+ <!--  <img src="Pattismith.jpeg" alt="Patti Smith"
+    class="absolute top-10 left-10 w-64 h-auto" />
 
-	<div class="w-24 h-24 bg-red-400"></div>
+  <img src="Pattismith.jpeg" alt="Patti Smith"
+    class="absolute top-10 right-10 w-64 h-auto" />-->
 
+   
+  <div class="flex flex-col items-center text-center p-8 space-y-12">
+    <Navigation link="/Aboutside" title="ABOUT" src="Pattismith.jpeg" />
+    <Navigation link="/Projekterside" title="PROJECTS" src="Pattismith.jpeg" />
+  </div>
 </Layout>
+

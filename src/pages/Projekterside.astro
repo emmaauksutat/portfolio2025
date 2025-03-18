@@ -1,0 +1,62 @@
+---
+import Logo from "../components/Logo.astro";
+import Projects from "../components/Projects.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+	
+	<Logo title="EMMAAUKSUTAT" description="My projects"></Logo>
+  <!-- Projektsiden med ensartet layout og styling -->
+<div class="px-60">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12 p-8 text-center">
+
+
+
+    <!-- Projekt 1 -->
+    <Projects 
+      link="/Project1side" 
+      img="Pattismith.jpeg" 
+      tekst="PROJECT1" 
+      buttonColor="bg-red-400"
+    />
+
+    <!-- Projekt 2 -->
+    <Projects 
+      link="/Project2side" 
+      img="Pattismith.jpeg" 
+      tekst="PROJECT2" 
+      buttonColor="bg-red-400"
+    />
+
+    <!-- Projekt 3 -->
+    <Projects 
+      link="/Project3side" 
+      img="Pattismith.jpeg"  
+      tekst="PROJECT3" 
+      buttonColor="bg-red-400"
+    />
+
+	<Projects 
+	link="/Project4side" 
+	img="Pattismith.jpeg"  
+	tekst="PROJECT4" 
+	buttonColor="bg-red-400"
+  />
+
+  <Projects 
+	link="/Project5side" 
+	img="Pattismith.jpeg" 
+	tekst="PROJECT5" 
+	buttonColor="bg-red-400"
+  />
+
+  <Projects 
+	link="/Project6side" 
+	img="Pattismith.jpeg" 
+	tekst="PROJECT6" 
+	buttonColor="bg-red-400"
+  />
+  </div>
+</div>
+</Layout>
