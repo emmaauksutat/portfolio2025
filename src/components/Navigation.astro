@@ -8,6 +8,6 @@ const { link, title, src } = Astro.props;
 
   <a href={link} class="flex flex-col items-center space-y-4">
     <img src={src} alt={title} class="w-85 h-75 rounded-1xl mb-4 shadow-md" />
-    <span class="text-2xl text-gray-900 hover:bg-yellow-200 transition">{title}</span>
+    <span class="text-2xl text-gray-900 border-b-0 hover:border-b-2 hover:border-red-600 transition">{title}</span>
   </a>
 </div>

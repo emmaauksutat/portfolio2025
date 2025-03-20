@@ -8,55 +8,76 @@ import Layout from "../layouts/Layout.astro";
 	
 	<Logo title="EMMAAUKSUTAT" description="My projects"></Logo>
   <!-- Projektsiden med ensartet layout og styling -->
-<div class="px-60">
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-12 p-8 text-center">
+<div class="px-80 flex justify-center">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-20 p-8 text-center mx-auto ">
 
 
 
     <!-- Projekt 1 -->
     <Projects 
       link="/Project1side" 
-      img="Pattismith.jpeg" 
-      tekst="PROJECT1" 
+      img="SB1.jpg" 
+      tekst="Sketchbook" 
       buttonColor="bg-red-400"
+	  customClass=
     />
 
     <!-- Projekt 2 -->
     <Projects 
       link="/Project2side" 
-      img="Pattismith.jpeg" 
-      tekst="PROJECT2" 
+      img="Tearmyheartout1.jpg" 
+      tekst="Tear My Heart Out" 
       buttonColor="bg-red-400"
+	  customClass="object-[10%_15%]"
     />
 
     <!-- Projekt 3 -->
     <Projects 
       link="/Project3side" 
-      img="Pattismith.jpeg"  
-      tekst="PROJECT3" 
+      img="Disconnect1.jpg"  
+      tekst="Disconnect" 
       buttonColor="bg-red-400"
+	  customClass=
     />
 
 	<Projects 
-	link="/Project4side" 
-	img="Pattismith.jpeg"  
-	tekst="PROJECT4" 
-	buttonColor="bg-red-400"
-  />
+	 link="/Project4side" 
+	 img="Selvmord1.jpg"  
+	 tekst="Selvmord" 
+	 buttonColor="bg-red-400"
+	 customClass="object-[0%_20%] "
+   />
 
   <Projects 
 	link="/Project5side" 
-	img="Pattismith.jpeg" 
-	tekst="PROJECT5" 
+	img="Happybirthday1.jpg" 
+	tekst="Happy Birthday!" 
 	buttonColor="bg-red-400"
   />
 
   <Projects 
 	link="/Project6side" 
-	img="Pattismith.jpeg" 
-	tekst="PROJECT6" 
+	img="Seetroughme1.jpg" 
+	tekst="See Trough Me" 
 	buttonColor="bg-red-400"
+	customClass="object-[0%_18%] "
   />
+
+  <Projects 
+   link="/Project7side" 
+   img="LORDFORGIVEME1.jpg" 
+   tekst="LORD FORGIVE ME" 
+   buttonColor="bg-red-400"
+  />
+
+ <Projects 
+  link="/Project8side" 
+  img="Gennemsigtig1.jpg" 
+  tekst="Gennemsigtig" 
+  buttonColor="bg-red-400"
+ />
+
   </div>
 </div>
+
 </Layout>

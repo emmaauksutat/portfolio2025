@@ -1,22 +1,23 @@
 ---
-const { img, tekst, buttonColor, link } = Astro.props;
+const { img, tekst, link, customClass } = Astro.props;
 ---
 
-<div  class=" w-85 h-75 bg-yellow-100 text-gray-900 rounded-1xl shadow-2xl overflow-hidden hover:scale-105 transform transition">
+<div class="w-85 h-75 bg-yellow-100 text-gray-900 rounded-1xl shadow-2xl overflow-hidden hover:scale-105 transform transition">
 
-    
   <!-- Projekt Billede med padding for at undgå at gå ud til kanterne -->
   <div class="p-5">
-    <img src={img} alt={tekst} class="w-full h-48 object-cover rounded-1xl" />
+   
+    <img src={img} alt={tekst} class={`w-full h-48 object-cover rounded-1xl ${customClass || ''}`} />
+
   </div>
 
   <!-- Projekt Information -->
   <div>
     <p class="text-2xl mb-0">{tekst}</p>
     <div class="mb-9">
-    <a href={link} class="hover:bg-yellow-200 transition">See more</a>
+      <a href={link} class="hover:border-b-2 hover:border-red-600 bottom-2 transition">See more</a>
     </div>
   </div>
 
-  
 </div>
+

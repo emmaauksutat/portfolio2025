@@ -1,0 +1,40 @@
+---
+import Logo from "../components/Logo.astro"
+import Layout from "../layouts/Layout.astro"
+
+---
+<Layout>
+    <Logo title="EMMAAUKSUTAT" description="Gennemsigtig"></Logo>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 p-8 text-center">
+  
+      <!-- Venstre Kolonne: Gennemsigtig1 -->
+      <div class="p-6 relative rounded-1xl bg-yellow-100 shadow-2xl">
+        <div class="flex flex-col items-center space-y-4">
+          <img src="Gennemsigtig1.jpg" class="w-full h-auto rounded-1xl mb-4 shadow-md" />
+        
+        </div>
+      </div>
+  
+      <!-- Højre Kolonne med 2 Sticky Notes (Gennemsigtig2 & Gennemsigtig3) -->
+      <div class="space-y-8">
+        
+        <!-- Gennemsigtig2 -->
+        <div class="p-6 relative rounded-1xl bg-yellow-100 shadow-2xl">
+          <div class="flex flex-col items-center space-y-4">
+            <img src="gennemsigtig2.jpg" class="w-full h-auto rounded-1xl mb-4 shadow-md" />
+          
+          </div>
+        </div>
+  
+        <!-- Gennemsigtig3 -->
+        <div class="p-6 relative rounded-1xl bg-yellow-100 shadow-2xl">
+          <div class="flex flex-col items-center space-y-4">
+            <img src="gennemsigtig3.jpg" class="w-full h-auto rounded-1xl mb-4 shadow-md" />
+           
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </Layout>
+  

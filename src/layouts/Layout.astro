@@ -23,8 +23,11 @@ import "../styles/global.css";
 	  width: 100%;
 	  height: 100%;
 	  font-family: 'Courier New', Courier, monospace;
-	  background-color: #f0e4d7; /* En varm off-white baggrund */
-	  background: url(notespapir.jpg) repeat; /* Hvis du har en papirtekstur */
+	  background-color: #f0e4d7; 
+	  background: url(notespapir.jpg) repeat;
+	  background-size: 150% 160%; /* Sikrer, at baggrunden dækker hele bredden */
+	  background-position: top center; /* Centrerer baggrunden */
+	
 	}
 
 	body {
@@ -67,7 +70,6 @@ import "../styles/global.css";
 
 	.content-wrapper {
 	  padding: 0 20px;
-	  max-width: 1200px;
 	  margin: 0 auto;
 	}
 
@@ -83,4 +85,6 @@ import "../styles/global.css";
 	  letter-spacing: 0.1rem;
 	  font-weight: bold;
 	}
+
+	
 	</style>
